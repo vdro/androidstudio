@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Body Mass Index Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="heightLabel">Height</string>
+    <string name="height">Enter Your height [cm]</string>
+    <string name="weightLabel">Weight</string>
+    <string name="weight">Enter Your weight [kg]</string>
+    <string name="calculateBMI">Calculate BMI</string>
+    <string name="under">Underweight</string>
+    <string name="normal">Healthy range</string>
+    <string name="over">Overweight</string>
+    <string name="obese">Obese</string>
+</resources>
