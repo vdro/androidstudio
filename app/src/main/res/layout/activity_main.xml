@@ -2,36 +2,35 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_dark_background"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/Header1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Kalkulator BMI"
-        android:textColor="#fff"
-        android:textSize="52dp"
+        android:text="@string/title"
+        android:textColor="@color/colorWhite"
+        android:textSize="52sp"
         android:textStyle="bold"
+        android:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <TextView
         android:id="@+id/BMI_txt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Twoje BMI wynosi: 0"
+        android:text="@string/main_subtitle_info"
         android:textAlignment="center"
-        android:textColor="#fff"
-        android:textSize="22dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="22sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-
         app:layout_constraintTop_toBottomOf="@+id/Header1" />
 
     <Button
@@ -40,23 +39,19 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-
-        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:text="@string/main_btn_BMI"
         android:layout_marginTop="50dp"
-        android:text="BMI"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Header1" />
 
     <Button
-
         android:id="@+id/btn_dieta"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-
-        android:text="Dieta"
-
+        android:text="@string/main_btn_dieta"
         app:layout_constraintStart_toEndOf="@+id/btn_BMI"
         app:layout_constraintTop_toTopOf="@+id/btn_BMI" />
 
@@ -66,9 +61,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-
-        android:text="Kalorie"
-        android:textColorLink="#FFFFFF"
+        android:text="@string/main_btn_kalorie"
         app:layout_constraintEnd_toEndOf="@+id/btn_BMI"
         app:layout_constraintTop_toBottomOf="@+id/btn_BMI" />
 
@@ -78,9 +71,20 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-
-        android:text="ZAMKNIJ"
+        android:text="@string/main_btn_zamknij"
         app:layout_constraintEnd_toEndOf="@+id/btn_dieta"
         app:layout_constraintTop_toBottomOf="@+id/btn_BMI" />
+
+    <Button
+        android:id="@+id/btn_korona"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:background="@color/colorKorona"
+        android:text="@string/main_btn_korona"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Exit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_Kalorie"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Kalorie" />
 
 </android.support.constraint.ConstraintLayout>
